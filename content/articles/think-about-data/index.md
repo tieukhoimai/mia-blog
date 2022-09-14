@@ -16,6 +16,7 @@ keywords:
 
 
 <aside>
+
 💡 This topic discusses how we think about data between data aware, data informed, and data driven - as a data approach for various jobs or in daily life. It is a part of sharing session which I presented in Fossil Vietnam on August 2022.
 
 </aside>
@@ -29,13 +30,11 @@ Every day business will make important decisions and how to make them most confi
 
 Regarding the value that data brings, starting with processing and exploiting important information from there we begin to have information and insights. Based on that information and insight, the business will have certain knowledge, from which to build up wisdom and understanding of what is going on in business. So data is not only the foundation of insights but also the strength of a business.
 
-<br>
-
 Therefore, I will introduce three ways to think about data - data aware, data inform and driven. This content is inspired from “*Designing with data: Improving the user experience with A/B testing” -* Rochelle King, Elizabeth F. Churchill & Caitlin Tan
 
 <br>
 
-# 1. ****Data Driven****
+# Data Driven
 
 Data-driven indicates that the information gathered drives decisions. In certain cases, this is the best course of action. The  questions can sometimes be definitely answered by gathering data through experimental. The results of their data collecting clearly map to a clear optimal option.
 
@@ -55,13 +54,15 @@ Data-driven indicates that the information gathered drives decisions. In certain
     </p>
 </section>
 
-📚 Data is a *source of truth* - This is **an application** of data
+<aside>
+
+#### 📚 Data is a *source of truth* - This is **an application** of data
 
 </aside>
 
 <br>
 
-# 2. Data Inform
+# Data Inform
 
 In other cases, the facts may point to a less-than-clear solution. This is the term data-informed decision-making, in which a team **uses data as merely one input in their decision-making process**.
 The outcome may not be a clear option, but it may result in the establishment of another iteration or research. More research, other types of data, and/or an informed creative leap may be required at this point. 
@@ -74,11 +75,13 @@ A train station is a good metaphor for being data informed: there are multiple t
 
 <aside>
 
-📎 This is a **discipline and a practice** around data
+#### 📎 This is a **discipline and a practice** around data
 
 </aside>
 
-# 3. Data Driven
+<br>
+
+# Data Driven
 
 Data-aware to emphasize the fact that decisions must be made not only from data but also from data collection practices — that how a system is instrumented, what data types are captured, and how they are combined, is a  problem in and of itself.
 
@@ -90,11 +93,13 @@ We talked more about how to go by train but think more generally, trains are sim
 
 <aside>
 
-📖 This is a **philosophy** about data
+#### 📖 This is a **philosophy** about data
 
 </aside>
 
-# 4. Summary
+<br>
+
+# Summary
 
 ![Untitled](resource/Untitled4.png)
 
@@ -128,14 +133,13 @@ We talked more about how to go by train but think more generally, trains are sim
 
 <br>
 
-# 5. Bonus | ****Data in the future - A/B Testing****
+# Bonus | Data in the future - A/B Testing
 
-<aside>
-📋 A/B testing (also known as split testing) is the practice presenting a sampling of users with two versions of a screen or in-app experience and tracking user interactions with each version to determine if one more positively influences user behavior or engagement.
+A/B testing (also known as split testing) is the practice presenting a sampling of users with two versions of a screen or in-app experience and tracking user interactions with each version to determine if one more positively influences user behavior or engagement.
 
-  Source: [Everything you need to know about mobile app A/B testing](https://www.appsflyer.com/blog/measurement-analytics/mobile-ab-testing/)
+Source: [Everything you need to know about mobile app A/B testing](https://www.appsflyer.com/blog/measurement-analytics/mobile-ab-testing/)
 
-</aside>
+<br>
 
 ![*Source: King, R., Churchill, E. F., & Tan, C. (2017). Designing with data: Improving the user experience with A/B testing. " O'Reilly Media, Inc."*](resource/Untitled5.png)
 
@@ -151,7 +155,7 @@ Go through how to express ideas and goals as well-formed hypotheses that encapsu
 
 <aside>
 
-📚 One way to construct a strong hypothesis is: For [*user group(s)*], if [*change*] then [*effect*] because [*rationale*], which will impact [*measure*].
+#### 📚 One way to construct a strong hypothesis is: For [ *user group(s)* ], if [ *change* ] then [ *effect* ] because [ *rationale* ], which will impact [ *measure* ].
 
 </aside>
 
@@ -161,7 +165,7 @@ It is corresponding to three phases: Definition, Execution, and Analysis
 
 <br>
 
-# 6. Reference
+# Reference
 
 1. King, R., Churchill, E. F., & Tan, C. (2017). Designing with data: Improving the user experience with A/B testing. " O'Reilly Media, Inc."
-2. Everything you need to know about mobile app A/B testing,[[https://www.appsflyer.com/blog/measurement-analytics/mobile-ab-testing/](https://www.appsflyer.com/blog/measurement-analytics/mobile-ab-testing/)]
+2. Everything you need to know about mobile app A/B testing,[https://www.appsflyer.com/blog/measurement-analytics/mobile-ab-testing/](https://www.appsflyer.com/blog/measurement-analytics/mobile-ab-testing)
