@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "visible": true,
+      "category": "📚 Stories, Thoughs and Ideas",
+      "title": "STORYTELLER!",
+      "description": "Just one day, I have many concerns about life, work and everything. Then I just realized that everyone has the same problem and they write their stories but then hesitated for a long time, to finally delete them. But I've found that the more I tell, the more I can overcome those problems and have someone else to stand with instead of being afraid of getting hurt. So if someone out there has a story of themselves, I always want to say, \"Tell your story, I listen to.\"",
+      "tags": ["Stories", "Listener", "Teller"],
+      "image": {
+        "src": "../../images/stories.jpg",
+        "alt": "Stories",
+        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+      }
+    },
+    {
+      "visible": true,
+      "category": "💯 Sharing Corner",
+      "title": "EVERYBODY CAN DATA!",
+      "description": "My belief that \"Everyone Can Data\" and mathematical theories and methods that make up the backbone of modern data analytics and data sciences. Let's learn it, write it and bring it all together for continous improvement",
+      "tags": ["Sharing", "Data", "Visualization"],
+      "image": {
+        "src": "../../images/data.jpg",
+        "alt": "Sharing Corner"
+      },
+      "links": [
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/posts/tieukhoimai_i-just-learned-a-course-on-udemy-about-design-activity-6833416409327001600-H_Up?utm_source=linkedin_share&utm_medium=member_desktop_web"
+        }
+      ]
+    }
+  ],
+  "button": {
+    "visible": true,
+    "label": "Visit on Linkedin",
+    "url": "https://www.linkedin.com/in/tieukhoimai/"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "siteMetadata": {
+    "language": "en",
+    "siteUrl": "https://",
+    "title": "Portfolio Minimal",
+    "titleTemplate": "%s · Portfolio Minimal",
+    "description": "Portfolio Minimal theme.",
+    "author": "Tieu Khoi Mai",
+    "avatar": "../content/images/contact.jpg",
+    "bio": "Data Analyst @Cloud @Fossil | Storyteller | Focus to maximize conversion of data to insights and experience optimization",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/tieukhoimai/",
+      "mail": "mailto:tieukhoimai@gmail.com"
+    }
+  },
+  "siteConfiguration": {
+    "logo": { "text": "mai" },
+    "navigation": {
+      "header": [
+        { "label": "About", "url": "/#about" },
+        { "label": "Blog", "url": "/blog" },
+        { "label": "Topic", "url": "/#topic" },
+        { "label": "Contact", "url": "/#contact" }
+      ],
+      "ctaButton": {
+        "openNewTab": true,
+        "label": "Resume",
+        "url": "/resume.pdf"
+      },
+      "footer": [
+        
+      ]
+    },
+    "featureToggles": {
+      "useDarkModeAsDefault": false,
+      "useDarkModeBasedOnUsersPreference": true,
+      "useCookieBar": false
+    }
+  }
+}

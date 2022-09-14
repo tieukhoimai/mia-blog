@@ -1,0 +1,23 @@
+{
+  "intro": "Hej",
+  "heroPhoto": {
+    "src": "../../images/lego-dummy.png",
+    "alt": "My Photo"
+  },
+  "image": {
+    "src": "../../images/coding_gif.png",
+    "alt": "Coding Emoji"
+  },
+  "title": "I'm Mai",
+  "subtitle": {
+    "prefix": "Talks about ",
+    "highlight": "analytics, mathematics and experience",
+    "suffix": "."
+  },
+  "description": "Data Analyst @Cloud @Fossil | Focus to maximize conversion of data to insights and experience optimization",
+  "socialProfiles": {
+    "from": ["LinkedIn", "Mail"],
+    "showIcons": false
+  }
+}
+

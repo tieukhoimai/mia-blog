@@ -1,0 +1,13 @@
+{
+  "name": "Contact me",
+  "email": "tieukhoimai (et) gmail (dot) com",
+  "description": "I'd like to catch up with you and we can talk more about Data. Keep Connected!",
+  "image": {
+    "src": "../../images/contact.jpg",
+    "alt": "Mai Avatar"
+  },
+  "socialProfiles": {
+    "from": ["LinkedIn", "Mail"],
+    "showIcons": true
+  }
+}

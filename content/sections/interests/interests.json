@@ -1,0 +1,65 @@
+{
+  "interests": [
+    {
+      "label": "Statistic",
+      "image": {
+        "src": "../../images/joystick.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Mathematics",
+      "image": {
+        "src": "../../images/notebook.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Software Development",
+      "image": {
+        "src": "../../images/computer.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Product Experiences",
+      "image": {
+        "src": "../../images/mobile-phone.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Data Stories",
+      "image": {
+        "src": "../../images/gem-stone.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "ML /AI",
+      "image": {
+        "src": "../../images/coding.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Econometrics",
+      "image": {
+        "src": "../../images/mountain.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Business",
+      "image": {
+        "src": "../../images/high-voltage.png",
+        "alt": ""
+      }
+    }
+  ],
+  "button": {
+    "visible": true,
+    "label": "+ Load More",
+    "initiallyShownInterests": 5
+  }
+}
