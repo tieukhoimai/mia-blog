@@ -83,6 +83,7 @@ A train station is a good metaphor for being data informed: there are multiple t
 
 # Data Driven
 
+
 Data-aware to emphasize the fact that decisions must be made not only from data but also from data collection practices — that how a system is instrumented, what data types are captured, and how they are combined, is a  problem in and of itself.
 
 And the important things that create systems so that the right data types are collected to address the right questions

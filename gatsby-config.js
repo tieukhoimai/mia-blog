@@ -6,7 +6,7 @@ module.exports = {
         siteUrl: "https://gatsby-starter-portfolio-minimal-theme.netlify.app/", // Used for sitemap generation
         manifestSettings: {
           favicon: "./content/images/contact.jpg", // Path is relative to the root
-          siteName: "my /mai/ personal blog", // Used in manifest.json
+          siteName: "my /maɪ/ personal blog", // Used in manifest.json
           shortName: "mai's personal blog", // Used in manifest.json
           startUrl: "/", // Used in manifest.json
           backgroundColor: "#FFFFFF", // Used in manifest.json
