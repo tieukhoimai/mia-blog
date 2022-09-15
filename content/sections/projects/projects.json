@@ -8,8 +8,7 @@
       "tags": ["Stories", "Listener", "Teller"],
       "image": {
         "src": "../../images/stories.jpg",
-        "alt": "Stories",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "alt": "Stories"
       }
     },
     {
@@ -20,14 +19,9 @@
       "tags": ["Sharing", "Data", "Visualization"],
       "image": {
         "src": "../../images/data.jpg",
-        "alt": "Sharing Corner"
-      },
-      "links": [
-        {
-          "type": "linkedin",
-          "url": "https://www.linkedin.com/posts/tieukhoimai_i-just-learned-a-course-on-udemy-about-design-activity-6833416409327001600-H_Up?utm_source=linkedin_share&utm_medium=member_desktop_web"
-        }
-      ]
+        "alt": "Sharing Corner",
+        "linkTo": "https://www.linkedin.com/posts/tieukhoimai_i-listened-a-podcast-refer-link-below-on-activity-6933892971075354624-eY9V?utm_source=share&utm_medium=member_desktop"
+      }
     }
   ],
   "button": {
