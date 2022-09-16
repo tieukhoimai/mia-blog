@@ -2,9 +2,9 @@
   "siteMetadata": {
     "language": "en",
     "siteUrl": "https://tieukhoimai.me",
-    "title": "Portfolio Minimal",
-    "titleTemplate": "%s · Portfolio Minimal",
-    "description": "Portfolio Minimal theme.",
+    "title": "mai's personal blog",
+    "titleTemplate": "%s · mai's personal blog",
+    "description": "mai's personal blog",
     "author": "Tieu Khoi Mai",
     "avatar": "../content/images/contact.jpg",
     "bio": "Data Analyst @Cloud @Fossil | Storyteller | Focus to maximize conversion of data to insights and experience optimization",
