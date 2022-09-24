@@ -165,3 +165,18 @@ Statistical approaches are classified into two types: descriptive statistics and
   </tr>
 </tbody>
 </table>
+
+# References
+
+Wilke, C. O. (2019). *Fundamentals of data visualization: a primer on making info*
+
+Gaddis, M. L., & Gaddis, G. M. (1990). Introduction to biostatistics: part 1, basic concepts. *Annals of emergency medicine*
+, *19*(1), 86-89.
+
+[https://www.ebmconsult.com/articles/nominal-data](https://www.ebmconsult.com/articles/nominal-data)
+
+[https://careerfoundry.com/en/blog/data-analytics/what-is-ratio-data/](https://careerfoundry.com/en/blog/data-analytics/what-is-ratio-data/)
+
+[https://spectrum.adobe.com/page/data-visualization-fundamentals/](https://spectrum.adobe.com/page/data-visualization-fundamentals/)
+
+[https://spectrum.adobe.com/page/color-for-data-visualization/](https://spectrum.adobe.com/page/color-for-data-visualization/)
