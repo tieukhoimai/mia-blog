@@ -29,7 +29,12 @@ Based on the **types of data**, the colors used for data visualization can be pu
 
 ![Type of Data](resource/types-of-data.png)
 
-There are two main types of data is Qualitative (or categorical) and Quantitative (or numerical) data. Based on these we can classify to four primary levels of measurement are nominal, ordinal, interval, and ratio.
+There are two main types of data
+
+- Qualitative/ categorical data, fields that contain qualitative information are **dimensions**. 
+- Quantitative/ numerical data - will always be a number that can be **measured**, which called a **metric**.
+
+Based on these we can classify to four primary levels of measurement are nominal, ordinal, interval, and ratio.
 
 
 <style type="text/css">
@@ -39,8 +44,14 @@ There are two main types of data is Qualitative (or categorical) and Quantitativ
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-8y1a{background-color:#656565;color:#ffffff;font-size:16px;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-vask{font-size:13px;text-align:left;vertical-align:top}
-.tg .tg-fwpr{border-color:#333333;font-size:13px;text-align:left;vertical-align:top}
+.tg .tg-vask{border-color:#333333;font-size:14px;text-align:left;vertical-align:top}
+.tg .tg-fwpr{border-color:#333333;font-size:14px;text-align:left;vertical-align:top}
+table {
+  border-collapse: collapse;
+  width: calc(100% + 50px + 50px); /* Add the negative margins from below */
+  border-spacing: 0;
+  margin: 0 -50px 0 -50px; /* Expand the Table on both left and right side */
+}
 </style>
 <table class="tg">
 <thead>
@@ -54,7 +65,7 @@ There are two main types of data is Qualitative (or categorical) and Quantitativ
     <td class="tg-vask" rowspan="2">Qualitative</td>
     <td class="tg-vask" colspan="2">Nominal</td>
     <td class="tg-vask">Categories without order. These are discrete and unique categories that have no inherent order. These variables are also called <br><span style="font-style:italic">factors</span>.</td>
-    <td class="tg-vask">- Languages: English,  Chinese, Vietnamese, etc.<br>- Relationship status: married, single, etc.<br>- Public transportation bus, train, car, etc.</td>
+    <td class="tg-fwpr">- Languages: English,  Chinese, Vietnamese, etc.<br>- Relationship status: married, single, etc.<br>- Public transportation bus, train, car, etc.</td>
   </tr>
   <tr>
     <td class="tg-fwpr" colspan="2">Ordinal</td>
@@ -126,11 +137,17 @@ Statistical approaches are classified into two types: descriptive statistics and
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-kefr{background-color:#656565;border-color:inherit;color:#efefef;font-size:15px;font-weight:bold;text-align:left;
   vertical-align:top}
-.tg .tg-kapl{border-color:inherit;font-size:12px;font-style:italic;text-align:left;vertical-align:top}
-.tg .tg-73a0{border-color:inherit;font-size:12px;text-align:left;vertical-align:top}
+.tg .tg-kapl{border-color:inherit;font-size:14px;font-style:italic;text-align:left;vertical-align:top}
+.tg .tg-73a0{border-color:inherit;font-size:14px;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-f44y{background-color:#ffffff;border-color:#333333;font-size:12px;font-style:italic;text-align:left;vertical-align:top}
-.tg .tg-jvlt{background-color:#ffffff;border-color:#333333;font-size:12px;text-align:left;vertical-align:top}
+.tg .tg-f44y{border-color:inherit;font-size:14px;font-style:italic;text-align:left;vertical-align:top}
+.tg .tg-jvlt{border-color:inherit;font-size:14px;text-align:left;vertical-align:top}
+table {
+  border-collapse: collapse;
+  width: calc(100% + 50px + 50px); /* Add the negative margins from below */
+  border-spacing: 0;
+  margin: 0 -50px 0 -50px; /* Expand the Table on both left and right side */
+}
 </style>
 <table class="tg">
 <thead>
