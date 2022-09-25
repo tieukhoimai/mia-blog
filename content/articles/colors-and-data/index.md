@@ -20,12 +20,14 @@ keywords:
 
 Visualizations are tools that can help people understand difficult ideas better. And a bad choice of color can hide important information and cause confusion. Graphics can help send the right message if they use the right color palettes. Color makes a chart look better and makes it easier for people to understand the data it shows.
 
-Based on the **types of data**, the colors used for data visualization can be put into three groups: categorical colors, sequential colors, and diverging colors.
-
 ![Overview](resource/background.png)
 
 
-# Types of Data
+Based on the **types of data**, the colors used for data visualization can be put into three groups: **categorical colors, sequential colors, and diverging colors**.
+
+<br>
+
+# 1. Types of Data
 
 ![Type of Data](resource/types-of-data.png)
 
@@ -92,8 +94,10 @@ Based on these we can classify to four primary levels of measurement are nominal
    </tbody>
 </table>
 
+<br>
 
-# Colors and Data
+
+# 2. Colors and Data
 
 ![Colors Palete](resource/categorical-colors.png)
 
@@ -118,7 +122,7 @@ If our numeric variable has a central value that makes sense, like zero, we can 
 
 **Diverging colors are designed to be balanced from a central midpoint.** Use these for **ordinal and ratio scales**, especially when there's a meaningful middle value. You can also use these to make interval scales. Don't use these with categorical data.
 
-# More about Data Types | Inferential statistics
+# 3. More about Data | Inferential statistics
 
 Statistical approaches are classified into two types: descriptive statistics and inferential statistics. Parametric tests are used to examine quantitative (rather than qualitative) information, whereas non-parametric tests are more typically employed for qualitative, non-numerical data.
 
