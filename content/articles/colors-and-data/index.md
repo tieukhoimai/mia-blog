@@ -37,68 +37,61 @@ There are two main types of data
 Based on these we can classify to four primary levels of measurement are nominal, ordinal, interval, and ratio.
 
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-8y1a{background-color:#656565;color:#ffffff;font-size:16px;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-vask{border-color:#333333;font-size:14px;text-align:left;vertical-align:top}
-.tg .tg-fwpr{border-color:#333333;font-size:14px;text-align:left;vertical-align:top}
-table {
-  border-collapse: collapse;
-  width: calc(100% + 50px + 50px); /* Add the negative margins from below */
-  border-spacing: 0;
-  margin: 0 -50px 0 -50px; /* Expand the Table on both left and right side */
-}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-8y1a" colspan="4">Types of data</th>
-    <th class="tg-8y1a">Example</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-vask" rowspan="2">Qualitative</td>
-    <td class="tg-vask" colspan="2">Nominal</td>
-    <td class="tg-vask">Categories without order. These are discrete and unique categories that have no inherent order. These variables are also called <br><span style="font-style:italic">factors</span>.</td>
-    <td class="tg-fwpr">- Languages: English,  Chinese, Vietnamese, etc.<br>- Relationship status: married, single, etc.<br>- Public transportation bus, train, car, etc.</td>
-  </tr>
-  <tr>
-    <td class="tg-fwpr" colspan="2">Ordinal</td>
-    <td class="tg-fwpr">Categories with order. These are discrete and unique categories with an order. These variables are also called <br><span style="font-style:italic">ordered factors.</span></td>
-    <td class="tg-fwpr">- Economic status: poor, middle income, wealthy<br>- Likert scales: Very satisfied, satisfied, neutral, dissatisfied, very dissatisfied</td>
-  </tr>
-  <tr>
-    <td class="tg-vask" rowspan="4">Quantitative</td>
-    <td class="tg-vask" rowspan="2">Discrete</td>
-    <td class="tg-vask"><span style="font-weight:400;font-style:normal">Nominal</span></td>
-    <td class="tg-vask">Nominal data are categorical, and the categories are mutually exclusive; there is no overlap between the categories.</td>
-    <td class="tg-vask">Gender:<br>- Females are assigned the number 1<br>- Males are assigned the number 2</td>
-  </tr>
-  <tr>
-    <td class="tg-vask">Ordinal</td>
-    <td class="tg-vask">When numbers are purposefully assigned to data that have a sense of rank or order, but the magnitude of difference between those numbers is not known or cannot be measured.</td>
-    <td class="tg-vask">- Grade score can range from as low as 0 and as high as 20.</td>
-  </tr>
-  <tr>
-    <td class="tg-vask" rowspan="2">Continuous</td>
-    <td class="tg-vask">Interval</td>
-    <td class="tg-vask">- When numbers have units that are of equal magnitude as well as rank order on a scale without an absolute zero<br>- Scales of this type can have an arbitrarily assigned "zero", but it will not correspond to an absence of the measured variable.</td>
-    <td class="tg-vask">- Temperature in Fahrenheit scale: 10, 0, +10, +20, +30.<br></td>
-  </tr>
-  <tr>
-    <td class="tg-vask">Ratio</td>
-    <td class="tg-vask">- When numbers have units that are of equal magnitude as well as rank order on a scale with an absolute zero<br>- Examples include: heart rate, blood pressure, distance.</td>
-    <td class="tg-vask">- Distance (from zero miles/km upwards)<br>- Time intervals</td>
-  </tr>
-</tbody>
+<table style="overflow-x:auto; font-size: 0.8em">
+   <thead>
+      <tr>
+         <th colspan="4" >Types of data</th>
+         <th>Example</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td rowspan="2" >Qualitative</td>
+         <td colspan="2" >Nominal</td>
+         <td>Categories without order. These are discrete and unique categories that have no inherent order. These variables are also called factors.</td>
+         <td>- Languages: English,  Chinese, Vietnamese, etc.<br>
+         - Relationship status: married, single, etc.<br>
+         - Public transportation bus, train, car, etc.</td>
+      </tr>
+      <tr>
+         <td colspan="2" >Ordinal</td>
+         <td>Categories with order. These are discrete and unique categories with an order. These variables are also called ordered factors.</td>
+         <td>
+         - Economic status: poor, middle income, wealthy<br>
+         - Likert scales: Very satisfied, satisfied, neutral, dissatisfied, very dissatisfied</td>
+      </tr>
+      <tr>
+         <td rowspan="4" >Quantitative</td>
+         <td rowspan="2" >Discrete</td>
+         <td>Nominal</td>
+         <td>When numbers are assigned to characteristics for the purpose of data classification arbitrarily and without any regard to order.</td>
+         <td>Gender: <br>
+          - Females are assigned the number 1 <br>
+          - Males are assigned the number 2</td>
+      </tr>
+      <tr>
+         <td>Ordinal</td>
+         <td>When numbers are purposefully assigned to data that have a sense of rank or order, but the magnitude of difference between those numbers is not known or cannot be measured.</td>
+         <td>Grade score can range from as low as 0 and as high as 20.</td>
+      </tr>
+      <tr>
+         <td rowspan="2" >Continous</td>
+         <td>Interval</td>
+         <td>
+          - When numbers have units that are of equal magnitude as well as rank order on a scale without an absolute zero<br>
+          - Scales of this type can have an arbitrarily assigned "zero", but it will not correspond to an absence of the measured variable. </td>
+         <td>Temperature in Fahrenheit scale: 10, 0, +10, +20, +30.</td>
+      </tr>
+      <tr>
+         <td>Ratio</td>
+         <td>- When numbers have units that are of equal magnitude as well as rank order on a scale with an absolute zero</td>
+         <td>
+          - Distance (from zero miles/km upwards)</br>
+          - Time intervals</td>
+      </tr>
+   </tbody>
 </table>
 
-</br>
 
 # Colors and Data
 
@@ -129,71 +122,64 @@ If our numeric variable has a central value that makes sense, like zero, we can 
 
 Statistical approaches are classified into two types: descriptive statistics and inferential statistics. Parametric tests are used to examine quantitative (rather than qualitative) information, whereas non-parametric tests are more typically employed for qualitative, non-numerical data.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-kefr{background-color:#656565;border-color:inherit;color:#efefef;font-size:15px;font-weight:bold;text-align:left;
-  vertical-align:top}
-.tg .tg-kapl{border-color:inherit;font-size:14px;font-style:italic;text-align:left;vertical-align:top}
-.tg .tg-73a0{border-color:inherit;font-size:14px;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-f44y{border-color:inherit;font-size:14px;font-style:italic;text-align:left;vertical-align:top}
-.tg .tg-jvlt{border-color:inherit;font-size:14px;text-align:left;vertical-align:top}
-table {
-  border-collapse: collapse;
-  width: calc(100% + 50px + 50px); /* Add the negative margins from below */
-  border-spacing: 0;
-  margin: 0 -50px 0 -50px; /* Expand the Table on both left and right side */
-}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-kefr">Inferential statistics</th>
-    <th class="tg-kefr">Definition</th>
-    <th class="tg-kefr">Characteristics</th>
-    <th class="tg-kefr">Type of data</th>
-    <th class="tg-kefr">Example</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-kapl" rowspan="2">Nonparametic Statistical Tests<br>	<br><br></td>
-    <td class="tg-73a0" rowspan="2">Refers to the use of statistical tests or methods when the data being studied comes from a sample or population of people that does not follow a normal distributed.</td>
-    <td class="tg-73a0" rowspan="2">- Assumes patient population being studied is not normally distributed (i.e., as seen with outliers)<br><span style="font-weight:400;font-style:normal">- The usual central measure is a median</span></td>
-    <td class="tg-73a0">Nominal</td>
-    <td class="tg-73a0" rowspan="2">- Mann-Whitney test (assumes 2 independent groups (i.e., not related) being studied)<br>- Kruskal-Wallis test (assumes &gt; 2 independent groups being studied/compared)<br>- Spearman (correlation test)</td>
-  </tr>
-  <tr>
-    <td class="tg-73a0">Ordinal</td>
-  </tr>
-  <tr>
-    <td class="tg-f44y" rowspan="2">Parametric Statistical Analysis<br>	<br><br>	<br></td>
-    <td class="tg-jvlt" rowspan="2">Refers to the use of statistical tests or methods when the data being studied comes from a sample or population of people that is normally distributed.</td>
-    <td class="tg-jvlt" rowspan="2"><span style="font-weight:400;font-style:normal">- Assumes patient population being studied is normally distributed</span><br>- Assumes the variance is homogeneous <br>- The usual central measure is a mean</td>
-    <td class="tg-jvlt">Interval</td>
-    <td class="tg-jvlt" rowspan="2">- T-test (assumes 2 independent groups (i.e., not related) being studied)<br>- One-way ANOVA (assumes &gt; 2 independent groups being studied/compared)<br>- Pearson (correlation test)</td>
-  </tr>
-  <tr>
-    <td class="tg-73a0">Ratio</td>
-  </tr>
-</tbody>
+<table style="overflow-x:auto; font-size: 0.8em">
+   <thead>
+      <tr>
+         <th>Inferential statistics	</th>
+         <th>Definition</th>
+         <th>Characteristics</th>
+         <th>Type of data</th>
+         <th>Example</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Nonparametic Statistical Tests</td>
+         <td>Refers to the use of statistical tests or methods when the data being studied comes from a sample or population of people that does not follow a normal distributed.</td>
+         <td>
+         - Assumes patient population being studied is not normally distributed (i.e., as seen with outliers)<br>
+         - The usual central measure is a median</td>
+         <td>
+         Nominal<br>
+         Ordinal</td>
+         <td>
+         - Mann-Whitney test (assumes 2 independent groups (i.e., not related) being studied)<br>
+         - Kruskal-Wallis test (assumes > 2 independent groups being studied/compared)<br>
+         - Spearman (correlation test)
+         </td>
+      </tr>
+      <tr>
+         <td>Parametric Statistical Analysis</td>
+         <td>Refers to the use of statistical tests or methods when the data being studied comes from a sample or population of people that is normally distributed.</td>
+         <td>
+         - Assumes patient population being studied is normally distributed<br>
+         - Assumes the variance is homogeneous <br>
+         - The usual central measure is a mean</td>
+         <td>
+         Interval<br>
+         Ratio</td>
+         <td>
+          - T-test (assumes 2 independent groups (i.e., not related) being studied)<br>
+          - One-way ANOVA (assumes > 2 independent groups being studied/compared)<br>
+          - Pearson (correlation test)</td>
+      </tr>
+   </tbody>
 </table>
 
 # References
 
 Wilke, C. O. (2019). *Fundamentals of data visualization: a primer on making info*
 
-Gaddis, M. L., & Gaddis, G. M. (1990). Introduction to biostatistics: part 1, basic concepts. *Annals of emergency medicine*
-, *19*(1), 86-89.
+Gaddis, M. L., & Gaddis, G. M. (1990). Introduction to biostatistics: part 1, basic concepts. *Annals of emergency medicine*, *19*(1), 86-89.
 
-[https://www.ebmconsult.com/articles/nominal-data](https://www.ebmconsult.com/articles/nominal-data)
+[Nominal Data](https://www.ebmconsult.com/articles/nominal-data)
 
-[https://careerfoundry.com/en/blog/data-analytics/what-is-ratio-data/](https://careerfoundry.com/en/blog/data-analytics/what-is-ratio-data/)
+[What is Ratio Data](https://careerfoundry.com/en/blog/data-analytics/what-is-ratio-data/)
 
-[https://spectrum.adobe.com/page/data-visualization-fundamentals/](https://spectrum.adobe.com/page/data-visualization-fundamentals/)
+[Nonparametric Statistical Analysis](https://www.ebmconsult.com/articles/nonparametric-statistical-analysis)
 
-[https://spectrum.adobe.com/page/color-for-data-visualization/](https://spectrum.adobe.com/page/color-for-data-visualization/)
+[Parametric Statistical Analysis](https://www.ebmconsult.com/articles/parametric-statistical-analysis)
+
+[Data Visualization Fundamentals](https://spectrum.adobe.com/page/data-visualization-fundamentals/)
+
+[Color For Data Visualization](https://spectrum.adobe.com/page/color-for-data-visualization/)
