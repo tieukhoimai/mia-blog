@@ -170,7 +170,7 @@ Statistical approaches are classified into two types: descriptive statistics and
    </tbody>
 </table>
 
-# References
+# 4. References
 
 Wilke, C. O. (2019). *Fundamentals of data visualization: a primer on making info*
 
