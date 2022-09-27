@@ -22,12 +22,10 @@ const RootElement = ({ children }) => {
     <Fragment>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
-        strategy='off-main-thread'
         forward={[`gtag`]}
       />
       <Script
         id='gtag-config'
-        strategy='off-main-thread'
         dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || [];
           window.gtag = function gtag(){ window.dataLayer.push(arguments);}
