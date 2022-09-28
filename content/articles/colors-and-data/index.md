@@ -99,6 +99,7 @@ Based on these we can classify to four primary levels of measurement are nominal
 
 # 2. Colors and Data
 
+## 2.1. Categorical Colors
 ![Colors Palete](resource/categorical-colors.png)
 
 A qualitative palette is used when the variable is a **categorical data**.  Categorical variables are those that have different labels but don't have an inherent order. 
@@ -109,12 +110,15 @@ Some examples include country, languages, and gender. Each possible value of the
 
 In a qualitative palette, the colors for each group need to be different, and you should try to keep the palette to a maximum of six colors that have been optimized and won't be too confusing.
 
+## 2.2. Sequential Colors
+
 ![Colors Palete](resource/sequential-colors.png)
 
-A sequential palette can be used when the variable that is supposed to be colored is a number or has values that are naturally ordered. Using these colors for dimensions can make it harder to see the numbers and cause people to misunderstand visualizations. Data values are given colors along a continuum, usually based on lightness, hue, or both. These are colors that get darker from light to dark.
+A sequential palette can be used when the variable that is supposed to be colored is a number or has values that are naturally ordered. Using these colors for dimensions can make it harder to see the numbers and cause people to misunderstand visualizations.
 
 **Sequential colors are optimized for numeric meaning**. Use these to create **ordinal and interval scales or also use these for ratio scales**. Don't use these as scales for categorical data. Using these colors for dimensions can make it harder to see the numbers and cause people to misunderstand visualizations.
 
+## 2.3. Diverging Colors
 
 ![Colors Palete](resource/diverging-colors.png)
 
