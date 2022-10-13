@@ -22,7 +22,6 @@ Visualizations are tools that can help people understand difficult ideas better.
 
 ![Overview](resource/background.png)
 
-
 Based on the **types of data**, the colors used for data visualization can be put into three groups: **categorical colors, sequential colors, and diverging colors**.
 
 <br>
@@ -37,7 +36,6 @@ There are two main types of data
 - Quantitative/ numerical data - will always be a number that can be **measured**, which called a **metric**.
 
 Based on these we can classify to four primary levels of measurement are nominal, ordinal, interval, and ratio.
-
 
 <table style="overflow-x:auto; font-size: 0.8em">
    <thead>
@@ -95,7 +93,6 @@ Based on these we can classify to four primary levels of measurement are nominal
 </table>
 
 <br>
-
 
 # 2. Colors and Data
 
