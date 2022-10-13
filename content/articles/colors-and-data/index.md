@@ -139,7 +139,7 @@ Statistical approaches are classified into two types: descriptive statistics and
    </thead>
    <tbody>
       <tr>
-         <td>Nonparametic Statistical Tests</td>
+         <td>Nonparametric Statistical Tests</td>
          <td>Refers to the use of statistical tests or methods when the data being studied comes from a sample or population of people that does not follow a normal distributed.</td>
          <td>
          - Assumes patient population being studied is not normally distributed (i.e., as seen with outliers)<br>
