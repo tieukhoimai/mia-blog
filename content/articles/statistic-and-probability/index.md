@@ -1,15 +1,15 @@
 ---
-title: "Statistic and Probability"
+title: "Statistics and Probability"
 description: "Some folks asked me about statistics - probability, toward which I answered that I had only studied a bit and knew very little about statistics. Then they said Are these are one?. In fact, Statistics and Probability are distinct from one another"
 date: "2022-12-18"
 banner:
   src: "resource/thumbnail.jpeg"
-  alt: "Statistic and Probability"
+  alt: "Statistics and Probability"
   caption: ''
 categories:
   - "Stories"
 keywords:
-  - "statistic"
+  - "statistics"
   - "probability"
 ---
 
@@ -66,7 +66,7 @@ Complicated process “=” Simple process + random noise
 
 Thì chúng ta sẽ không lãng phí thời gian để tung xúc xắc mà thay vào đó Thống kê là quá trình ước lượng tham số dựa trên dữ liệu (estimate parameters from data) và dữ liệu thì đến từ những quá trình ngẫu nhiên (Data comes from random process). Điều này giống như một vòng lặp của sự thật (circle of truth)
 
-![Untitled](resource/statistic-circle-of-truth.png)
+![Statistic - Circle of Truth](resource/statistic-circle-of-truth.png)
 
 Khi chúng ta thử nghiệm các xác suất, chúng ta được đưa cho mô hình để dự báo dữ liệu (given model, predict data) và sau đó dùng dữ liệu để ước lượng tham số và đưa ra mô hình. Trong một vài tài liệu khác, điều này được gọi là *“Central Dogma of Inference”*
 
@@ -74,7 +74,7 @@ Khi chúng ta thử nghiệm các xác suất, chúng ta được đưa cho mô 
 
 (2) Tuy nhiên, dữ liệu có thể thay đổi và tồn tại khả năng không chắc chắn (uncertainty) trong việc đưa ra suy luận (inference) về những dữ liệu đó.
 
-![Untitled](resource/statistic-central-dogma.png)
+![central dogma](resource/statistic-central-dogma.png)
 
 Source: [3]
 
@@ -101,7 +101,7 @@ Vì vậy một mô hình tốt bao gồm
     - Đưa ra xác suất của một tình huống cụ thể
 - Thống kê ước lượng tham số từ dữ liệu và đưa ra kết quả gần nhất có thể đối với quần thể (population)
 
-![Untitled](resource/conclusion.png)
+![conclusion](resource/conclusion.png)
 
 # Reference
 
