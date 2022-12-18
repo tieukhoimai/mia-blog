@@ -7,7 +7,7 @@ banner:
   alt: "Statistics and Probability"
   caption: ''
 categories:
-  - "Stories"
+  - "Statistics"
 keywords:
   - "statistics"
   - "probability"
