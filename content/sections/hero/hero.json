@@ -11,10 +11,10 @@
   "title": "I'm Mai",
   "subtitle": {
     "prefix": "Talks about ",
-    "highlight": "analytics, mathematics and experience",
+    "highlight": "data stories, insights and product experience",
     "suffix": "."
   },
-  "description": "Data Analyst @Cloud @Fossil | Focus to maximize conversion of data to insights and experience optimization",
+  "description": "Data Analyst @Cloud @Fossil | Focus to maximize conversion of data to insights and user experience optimization",
   "socialProfiles": {
     "from": ["LinkedIn", "Mail"],
     "showIcons": false
