@@ -3,7 +3,7 @@ title: "Think About Data"
 description: "This topic discusses how we think about data between data aware, data informed, and data driven - as a data strategy for various jobs or in daily life. It is a part of sharing session which I presented in Fossil Vietnam on August 2022."
 date: "2022-08-18"
 banner:
-  src: "../../images/the_data_way.jpg"
+  src: "resource/the_data_way.jpg"
   alt: "Think About Data"
   caption: ''
 categories:

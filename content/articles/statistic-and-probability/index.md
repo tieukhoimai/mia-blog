@@ -3,7 +3,7 @@ title: "Statistics and Probability"
 description: "Some folks asked me about statistics - probability, toward which I answered that I had only studied a bit and knew very little about statistics. Then they said Are these are one?. In fact, Statistics and Probability are distinct from one another"
 date: "2022-12-18"
 banner:
-  src: "resource/thumbnail.png"
+  src: "resource/thumbnail.jpeg"
   alt: "Statistics and Probability"
   caption: ''
 categories:
