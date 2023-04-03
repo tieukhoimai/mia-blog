@@ -21,7 +21,7 @@ keywords:
 
 In this article, I will introduce the concept of the **Basic Fact table** in Dimensional data modeling. This technique was first published in **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling in 1996**. To understand this technique, we will explore the different types of data modeling, including the relational data model, Entity Relationship model, Hierarchical data model, Object-Oriented model, and **Dimensional data model**. The Dimensional data model is composed of a **fact** table and **dimension** tables. This article will also recap some fundamental knowledge, including the star and snowflake schemas, which are common approaches to Dimensional data modeling. Additionally, we will explain the differences between these schemas by exploring the concepts of normalization.
 
-![Untitled](resource/Fig0.png)
+![overview](resource/Fig0.png)
 
 **Fig 1.** Data modeling overview
 
@@ -29,7 +29,7 @@ In this article, I will introduce the concept of the **Basic Fact table** in Dim
 
 **Data modeling** is the **process** of creating a conceptual representation of data and its relationships, which helps us understand how data is stored, accessed, updated, and queried within the database. The **output of that process** is a formal description of the data that has been modeled, which is called a data model. A data model can be compared to a roadmap, an architect's blueprint, or any formal diagram that facilitates a deeper understanding of what is being designed **[[1]](https://www.ibm.com/topics/data-modeling)**
 
-![Untitled](resource/Fig1.png)
+![three-level-of-data-modeling](resource/Fig1.png)
 
 **Fig 2.** Three level of data modeling
 
@@ -51,9 +51,9 @@ In conclusion,  a **conceptual data model** is a high-level view of the database
 
 The relational data model is based on the idea that data is stored in tables with columns that correspond to attributes and rows that correspond to individual records. The model is named "relational" because it emphasizes the relationships between tables, which are established through the use of primary and foreign keys.
 
-![Untitled](resource/Fig3.png)
+![relation-data-model](resource/Fig3.png)
 
-Fig 4: Relation data model [[2]](https://www.guru99.com/relational-data-model-dbms.html)
+**Fig 4**: Relational data model [[2]](https://www.guru99.com/relational-data-model-dbms.html)
 
 ## **Entity Relationship model**
 
@@ -61,7 +61,7 @@ The entity-relationship model, on the other hand, is designed to represent compl
 
 The ER model is based on the concept of a real-world entity, such as a person, place, or thing, that has attributes that describe it, and relationships with other entities. 
 
-![Untitled](resource/Fig4.png)
+![er-diagram](resource/Fig4.png)
 
 **Fig 5.** Entity Relationship diagram (Refer the conventions for diagramming in [[3]](https://www.lucidchart.com/pages/er-diagrams))
 
@@ -71,9 +71,9 @@ For example, in a university database, a student is an entity, with attributes l
 
 The hierarchical data model is typically used to represent data that has a strict parent-child relationship, such as the organization of a company or the structure of a file system. It is often used in mainframe and legacy systems. 
 
-![https://assets-global.website-files.com/620d42e86cb8ec4d0839e59d/6230e9d760057557e278e91c_61cb63ea50556dfc275b7d47_Hierarchical-Database-Model-example.png](https://assets-global.website-files.com/620d42e86cb8ec4d0839e59d/6230e9d760057557e278e91c_61cb63ea50556dfc275b7d47_Hierarchical-Database-Model-example.png)
+![hierarchical](resource/Fig17.jpeg)
 
-**Fig 6.** Hierarchical data model (Source: [EDUCBA](https://www.educba.com/hierarchical-database-model/))
+**Fig 6.** Hierarchical data model
 
 The major disadvantage of hierarchical databases is their **inflexible nature**. The one-to-many structure is not ideal for complex structures as it cannot describe relationships in which each child node has multiple parents nodes. [[4]](https://www.heavy.ai/technical-glossary/hierarchical-database)
 
@@ -117,7 +117,7 @@ Each level builds on the previous one and helps to ensure that the database is f
 
 ![Untitled](resource/Fig8.png)
 
-**Fig 9.** Star and Snowflake Schema. Reference from [[7]](%5BDimensional%20Modeling%5D%20Part%201%20Fundamental%20Concepts%20c326fbab131a43369359a38f7b627146.md)
+**Fig 10.** Star and Snowflake Schema. Reference from [[7]](%5BDimensional%20Modeling%5D%20Part%201%20Fundamental%20Concepts%20c326fbab131a43369359a38f7b627146.md)
 
 Star and snowflake schemas are two common dimensional data models used in dimensional modeling approach. 
 
@@ -125,7 +125,7 @@ A **star schema** consists of a central fact table connected to multiple dimensi
 
 ![Untitled](resource/Fig9.png)
 
-**Fig 10.** Difference between **star** and **snowflake schema**
+**Fig 11.** Difference between **star** and **snowflake schema**
 
 # Types of fact tables
 
@@ -133,7 +133,7 @@ A **fact table** is a fundamental table in a dimensional data model that stores 
 
 ![Untitled](resource/Fig10.png)
 
-**Fig 11.** Types of fact table
+**Fig 12.** Types of fact table
 
 There are three types of facts:
 
@@ -158,7 +158,7 @@ For example, each time we make a transaction action by pressing **PLACE ORDER**,
 
 ![Untitled](resource/Fig11.png)
 
-**Fig 12.** Transaction Fact Tables
+**Fig 13.** Transaction Fact Tables
 
 Characteristics of transaction fact table
 
@@ -173,9 +173,9 @@ A *periodic fact table* or *periodic fact entity* stores one row for a group
 
 For example, the periodic fact table will be **INSERT** a new row aggregated in month level (one row per time period)
 
-![Untitled](resource/Fig12.png)
+![periodic](resource/Fig12.png)
 
-**Fig 13.** Periodic Fact Tables
+**Fig 14.** Periodic Fact Tables
 
 Characteristics of periodic fact table
 
@@ -192,9 +192,9 @@ For example: when we PLACE ORDER, it will **INSERT** a new row to record the Ord
 
 ****
 
-![Untitled](resource/Fig13.png)
+![accumulating](resource/Fig13.png)
 
-**Fig 13.** Accumulating snapshot fact tables
+**Fig 15.** Accumulating snapshot fact tables
 
 Characteristics of Accumulating snapshot fact table
 
@@ -208,15 +208,15 @@ Characteristics of Accumulating snapshot fact table
 
 A **factless fact** table doesn't include any measure columns. It contains only dimension keys. 
 
-For example: To answer the question that *“What Products were on **promotion** but did not **sell**?.* We will have list of products **sold** (**Sell**), *illustrated* as **Fig 14** and list of products that were on **promotion** on a given day which called factless fact table (*Promotion), illustrated* as **Fig 15.**
+For example: To answer the question that *“What Products were on **promotion** but did not **sell**?.* We will have list of products **sold** (**Sell**), *illustrated* as **Fig 16** and list of products that were on **promotion** on a given day which called factless fact table (*Promotion), illustrated* as **Fig 17.**
 
-![Untitled](resource/Fig14.png)
+![fact sales](resource/Fig14.png)
 
-**Fig 14:** Fact Sales (***Sell***) - List of products sold
+**Fig 16:** Fact Sales (***Sell***) - List of products sold
 
-![Untitled](resource/Fig15.png)
+![fact promotion](resource/Fig15.png)
 
-**Fig 15:** Fact Promotion (***Promotion***) - List of products that were on promotion on a given day
+**Fig 17:** Fact Promotion (***Promotion***) - List of products that were on promotion on a given day
 
 Therefore, *Product were on promotion **but** did not sell* 
 
