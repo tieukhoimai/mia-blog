@@ -16,7 +16,20 @@ keywords:
   - "type of data"
 ---
 
-# Overview
+- [1. Overview](#1-overview)
+- [2. Types of Data](#2-types-of-data)
+- [3. Colors and Data](#3-colors-and-data)
+  - [3.1. Categorical Colors](#31-categorical-colors)
+  - [3.2. Sequential Colors](#32-sequential-colors)
+  - [3.3. Diverging Colors](#33-diverging-colors)
+- [4. More about Data | Inferential statistics](#4-more-about-data--inferential-statistics)
+- [5. References](#5-references)
+
+<br>
+
+<div id = '1-overview'/>
+
+# 1. Overview
 
 Visualizations are tools that can help people understand difficult ideas better. And a bad choice of color can hide important information and cause confusion. Graphics can help send the right message if they use the right color palettes. Color makes a chart look better and makes it easier for people to understand the data it shows.
 
@@ -26,7 +39,9 @@ Based on the **types of data**, the colors used for data visualization can be pu
 
 <br>
 
-# 1. Types of Data
+<div id = '2-types-of-data'/>
+
+# 2. Types of Data
 
 ![Type of Data](resource/types-of-data.png)
 
@@ -94,9 +109,13 @@ Based on these we can classify to four primary levels of measurement are nominal
 
 <br>
 
-# 2. Colors and Data
+<div id = '3-colors-and-data'/>
 
-## 2.1. Categorical Colors
+# 3. Colors and Data
+
+<div id = '31-categorical-colors'/>
+
+## 3.1. Categorical Colors
 ![Colors Palete](resource/categorical-colors.png)
 
 A qualitative palette is used when the variable is a **categorical data**.  Categorical variables are those that have different labels but don't have an inherent order. 
@@ -107,7 +126,9 @@ Some examples include country, languages, and gender. Each possible value of the
 
 In a qualitative palette, the colors for each group need to be different, and you should try to keep the palette to a maximum of six colors that have been optimized and won't be too confusing.
 
-## 2.2. Sequential Colors
+<div id = '32-sequential-colors'/>
+
+## 3.2. Sequential Colors
 
 ![Colors Palete](resource/sequential-colors.png)
 
@@ -115,7 +136,9 @@ A sequential palette can be used when the variable that is supposed to be colore
 
 **Sequential colors are optimized for numeric meaning**. Use these to create **ordinal and interval scales or also use these for ratio scales**. Don't use these as scales for categorical data. Using these colors for dimensions can make it harder to see the numbers and cause people to misunderstand visualizations.
 
-## 2.3. Diverging Colors
+<div id = '33-diverging-colors'/>
+
+## 3.3. Diverging Colors
 
 ![Colors Palete](resource/diverging-colors.png)
 
@@ -123,7 +146,9 @@ If our numeric variable has a central value that makes sense, like zero, we can 
 
 **Diverging colors are designed to be balanced from a central midpoint.** Use these for **ordinal and ratio scales**, especially when there's a meaningful middle value. You can also use these to make interval scales. Don't use these with categorical data.
 
-# 3. More about Data | Inferential statistics
+<div id = '4-more-about-data--inferential-statistics'/>
+
+# 4. More about Data | Inferential statistics
 
 Statistical approaches are classified into two types: descriptive statistics and inferential statistics. Parametric tests are used to examine quantitative (rather than qualitative) information, whereas non-parametric tests are more typically employed for qualitative, non-numerical data.
 
@@ -171,20 +196,22 @@ Statistical approaches are classified into two types: descriptive statistics and
    </tbody>
 </table>
 
-# 4. References
+<div id = '5-references'/>
 
-Wilke, C. O. (2019). *Fundamentals of data visualization: a primer on making info*
+# 5. References
 
-Gaddis, M. L., & Gaddis, G. M. (1990). Introduction to biostatistics: part 1, basic concepts. *Annals of emergency medicine*, *19*(1), 86-89.
+[1] Wilke, C. O. (2019). *Fundamentals of data visualization: a primer on making info*
 
-[Nominal Data](https://www.ebmconsult.com/articles/nominal-data)
+[2] Gaddis, M. L., & Gaddis, G. M. (1990). Introduction to biostatistics: part 1, basic concepts. *Annals of emergency medicine*, *19*(1), 86-89.
 
-[What is Ratio Data](https://careerfoundry.com/en/blog/data-analytics/what-is-ratio-data/)
+[3] EBMC. (n.d.). Nominal Data. Retrieved from https://www.ebmconsult.com/articles/nominal-data
 
-[Nonparametric Statistical Analysis](https://www.ebmconsult.com/articles/nonparametric-statistical-analysis)
+[4] CareerFoundry. (2021, May 7). What is Ratio Data? Retrieved from https://careerfoundry.com/en/blog/data-analytics/what-is-ratio-data/
 
-[Parametric Statistical Analysis](https://www.ebmconsult.com/articles/parametric-statistical-analysis)
+[5] EBMC. (n.d.). Nonparametric Statistical Analysis. Retrieved from https://www.ebmconsult.com/articles/nonparametric-statistical-analysis
 
-[Data Visualization Fundamentals](https://spectrum.adobe.com/page/data-visualization-fundamentals/)
+[6] EBMC. (n.d.). Parametric Statistical Analysis. Retrieved from https://www.ebmconsult.com/articles/parametric-statistical-analysis
 
-[Color For Data Visualization](https://spectrum.adobe.com/page/color-for-data-visualization/)
+[7] Adobe Spectrum. (n.d.). Data Visualization Fundamentals. Retrieved from https://spectrum.adobe.com/page/data-visualization-fundamentals/
+
+[8] Adobe Spectrum. (n.d.). Color for Data Visualization. Retrieved from https://spectrum.adobe.com/page/color-for-data-visualization/

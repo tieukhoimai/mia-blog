@@ -1,6 +1,6 @@
 ---
 title: "Dimensional Modeling - Part 1: Basic Fact Table Techniques"
-description: "In this article, I will introduce the concept of the **Basic Fact table in Dimensional data modeling. This technique was first published in The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling in 1996. To understand this technique, we will explore the different types of data modeling, including the relational data model, Entity Relationship model, Hierarchical data model, Object-Oriented model, and Dimensional data model. The Dimensional data model is composed of a fact table and dimension tables. This article will also recap some fundamental knowledge, including the star and snowflake schemas, which are common approaches to Dimensional data modeling. Additionally, we will explain the differences between these schemas by exploring the concepts of normalization."
+description: "In this article, I will introduce the concept of the **Basic Fact table in Dimensional data modeling. To understand this technique, we will explore the different types of data modeling and recap some fundamental knowledge, including the star and snowflake schemas, and the concepts of normalization."
 date: "2023-04-02"
 banner:
   src: "resource/thumbnail.png"
@@ -14,16 +14,38 @@ keywords:
   - "dimensional modeling"
   - "data modeling"
   - "types of fact tables"
----
+--- 
+#### Table of Contents
+- [1. Introduction](#1-introduction)
+- [2. What is data modeling](#2-what-is-data-modeling)
+- [3. Types of data modeling](#3-types-of-data-modeling)
+  - [3.1. Relational data model](#31-relational-data-model)
+  - [3.2. Entity Relationship model](#32-entity-relationship-model)
+  - [3.3. Hierarchical data model](#33-hierarchical-data-model)
+  - [3.4. Object oriented model](#34-object-oriented-model)
+  - [3.5. Dimensional data model](#35-dimensional-data-model)
+- [4. Normalization](#4-normalization)
+- [5. Star and Snowflake schema](#5-star-and-snowflake-schema)
+- [6. Types of fact tables](#6-types-of-fact-tables)
+  - [6.1. Transaction Fact Tables](#61-transaction-fact-tables)
+  - [6.2. Periodic Fact Tables](#62-periodic-fact-tables)
+  - [6.3. Accumulating snapshot fact tables](#63-accumulating-snapshot-fact-tables)
+  - [6.4. Factless fact tables](#64-factless-fact-tables)
+- [7. Reference](#7-reference)
 
+<br>
 
-# Introduction
+<div id='1-introduction'/>
+
+# 1. Introduction
 
 In this article, I will introduce the concept of the **Basic Fact table** in Dimensional data modeling. This technique was first published in **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling in 1996**. To understand this technique, we will explore the different types of data modeling, including the relational data model, Entity Relationship model, Hierarchical data model, Object-Oriented model, and **Dimensional data model**. The Dimensional data model is composed of a **fact** table and **dimension** tables. This article will also recap some fundamental knowledge, including the star and snowflake schemas, which are common approaches to Dimensional data modeling. Additionally, we will explain the differences between these schemas by exploring the concepts of normalization.
 
 ![overview](resource/Fig0.png '**Fig 1.** Data modeling overview')
 
-# What is data modeling
+<div id='2-what-is-data-modeling'/>
+
+# 2. What is data modeling
 
 **Data modeling** is the **process** of creating a conceptual representation of data and its relationships, which helps us understand how data is stored, accessed, updated, and queried within the database. The **output of that process** is a formal description of the data that has been modeled, which is called a data model. A data model can be compared to a roadmap, an architect's blueprint, or any formal diagram that facilitates a deeper understanding of what is being designed **[[1]](https://www.ibm.com/topics/data-modeling)**
 
@@ -37,18 +59,23 @@ There are three different levels of data modeling: conceptual data models, logic
 
 In conclusion,  a **conceptual data model** is a high-level view of the database that is used to communicate with stakeholders about the requirements of the database. The **conceptual data model** can then be used to create a **logical data model**, which is a more detailed view of the database that includes the relationships between entities, and the constraints and rules that apply to the data. Finally, the **logical data model** can be used to create **a physical data model**, which is the actual database schema that is implemented in a database management system.
 
-# Types of data modeling
+<div id='3-types-of-data-modeling'/>
+
+# 3. Types of data modeling
 
 ![Untitled](resource/Fig2.png '**Fig 3.** Common types of data modeling')
 
+<div id='31-relational-data-model'/>
 
-## **Relational data model**
+## 3.1. Relational data model
 
 The relational data model is based on the idea that data is stored in tables with columns that correspond to attributes and rows that correspond to individual records. The model is named "relational" because it emphasizes the relationships between tables, which are established through the use of primary and foreign keys.
 
 ![relation-data-model](resource/Fig3.png '**Fig 4**: Relational data model [[2]](https://www.guru99.com/relational-data-model-dbms.html)')
 
-## **Entity Relationship model**
+<div id='32-entity-relationship-model'/>
+
+## 3.2. Entity Relationship model
 
 The entity-relationship model, on the other hand, is designed to represent complex relationships between entities, such as one-to-one, one-to-many, and many-to-many relationships. It uses symbols such as diamonds and arrows to represent these relationships in a visual way that is easy to understand.
 
@@ -58,7 +85,9 @@ The ER model is based on the concept of a real-world entity, such as a person, p
 
 For example, in a university database, a student is an entity, with attributes like ID, name, and group id, and relationships with other entities like teacher, subject, and other students (ex: same group).
 
-## **Hierarchical data model**
+<div id = '33-hierarchical-data-model'/>
+
+## 3.3. Hierarchical data model
 
 The hierarchical data model is typically used to represent data that has a strict parent-child relationship, such as the organization of a company or the structure of a file system. It is often used in mainframe and legacy systems. 
 
@@ -66,7 +95,9 @@ The hierarchical data model is typically used to represent data that has a stric
 
 The major disadvantage of hierarchical databases is their **inflexible nature**. The one-to-many structure is not ideal for complex structures as it cannot describe relationships in which each child node has multiple parents nodes. [[4]](https://www.heavy.ai/technical-glossary/hierarchical-database)
 
-## **Object oriented model**
+<div id = '34-object-oriented-model'/>
+
+## 3.4. Object oriented model
 
 The object-oriented model is based on the idea of objects, which are self-contained units of code that encapsulate data and behavior. The model is designed to be flexible and adaptable, allowing developers to create new types of objects as needed.
 
@@ -79,13 +110,17 @@ MongoDB is one of the popular NoSQL databases that is particularly well-suited t
 
 MongoDB also provides support for **horizontal scaling**, allowing it to handle large volumes of data with ease. It uses a sharding technique to distribute data across multiple nodes in a cluster, which enables it to scale horizontally without sacrificing performance. Additionally, MongoDB supports dynamic schema, which means that data can be added to the database without the need for pre-defined schema or table structures.
 
-## **Dimensional data model**
+<div id = '35-dimensional-data-model'/>
+
+## 3.5. Dimensional data model
 
 The dimensional data model is specifically designed for data warehousing and business intelligence applications. It is optimized for fast queries and analysis by structuring data into "facts" (measures) and "dimensions" (attributes), which can be easily analyzed using **OLAP** tools.
 
 ![dim-data-model](resource/thumbnail.png '**Fig 8.** Description of Dimensional data modeling')
 
-# Normalization
+<div id = '4-normalization'/>
+
+# 4. Normalization
 
 Normalization is the process of structuring tables to resolve anomalies such as the insertion anomaly, the update anomaly and the deletion anomaly. There are three common levels of data normalization that are used to resolve these anomalies.
 
@@ -97,7 +132,7 @@ Normalization is the process of structuring tables to resolve anomalies such as 
 
 Each level builds on the previous one and helps to ensure that the database is free from redundancy and anomalies, which can improve its performance and maintainability. Refer a process of normalizing an example table in [[6]](https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
 
-# Star and Snowflake schema
+# 5. Star and Snowflake schema
 
 ![start and snowflake schema](resource/Fig8.png '**Fig 10.** Star and Snowflake Schema [[7]](%5BDimensional%20Modeling%5D%20Part%201%20Fundamental%20Concepts%20c326fbab131a43369359a38f7b627146.md)')
 
@@ -107,7 +142,9 @@ A **star schema** consists of a central fact table connected to multiple dimensi
 
 ![diff between start and snowflake schema](resource/Fig9.png '**Fig 11.** Difference between **star** and **snowflake schema**')
 
-# Types of fact tables
+<div id='6-types-of-fact-tables'/>
+
+# 6. Types of fact tables
 
 A **fact table** is a fundamental table in a dimensional data model that stores the numerical measurements or facts of a business process. These facts describe a specific event or transaction, such as a sale, a shipment, or a website click. Fact tables typically have one or more foreign keys that link to dimension tables, which provide descriptive information about the event or transaction.
 
@@ -128,7 +165,9 @@ There are several types of fact tables, including:
 
 The choice of a fact table type depends on the nature of the business process and the analytical requirements of the system. Fact tables can help answer many different types of questions, from simple counts and averages to complex correlations and predictions.
 
-## Transaction Fact Tables
+<div id = '61-transaction-fact-tables'/>
+
+## 6.1. Transaction Fact Tables
 
 The transaction grain represents a measurement event defined at a **particular instant**. A row in a *transaction fact table* corresponds to a measurement event at a point in space and time.
 
@@ -143,7 +182,9 @@ Characteristics of transaction fact table
 - **Largest** database size
 - **Highly** need for **aggregate** tables
 
-## Periodic Fact Tables
+<div id = '62-periodic-fact-tables'/>
+
+## 6.2. Periodic Fact Tables
 
 A *periodic fact table* or *periodic fact entity* stores one row for a group of transactions that happen over a period of time. The source data of the periodic snapshots fact table is data from a transaction fact table where choosing a period to get the output.
 
@@ -158,13 +199,13 @@ Characteristics of periodic fact table
 - Related to **periodic** activities
 - Mostly **semi**-**additive fact**
 
-## **Accumulating snapshot fact tables**
+<div id = '63-accumulating-snapshot-fact-tables'/>
+
+## 6.3. Accumulating snapshot fact tables
 
 The accumulating snapshots fact table describes the activity of a business process that has a clear beginning and end. This type of fact table, therefore, has multiple date columns to represent milestones in the process.
 
 For example: when we PLACE ORDER, it will **INSERT** a new row to record the Order ID and Order Placed Date. Until this order was paid/shipped out/received/completed, or we can say that **when a milestone is reached for a particular activity** this will **UPDATE** on this fact table.
-
-****
 
 ![accumulating](resource/Fig13.png '**Fig 15.** Accumulating snapshot fact tables')
 
@@ -174,7 +215,9 @@ Characteristics of Accumulating snapshot fact table
 - UPDATE when a milestone is reached for a particular activity
 - Related to activities which have a definite lifetime
 
-## **Factless fact tables**
+<div id = '64-factless-fact-tables'/>
+
+## 6.4. Factless fact tables
 
 *Factless fact tables* can also be used to analyze what didn’t happen. These queries always have two parts: a factless coverage table that contains all the possibilities of events that might happen and an activity table that contains the events that did happen. When the activity is subtracted from the coverage, the result is the set of events that did not happen. [[8]](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/factless-fact-table/)
 
@@ -194,7 +237,9 @@ Therefore, *Product were on promotion **but** did not sell*
 
 ![venn-diagram](resource/Fig16.png 'Fig 18: Venn Diagram to describe factless fact table')
 
-# Reference
+<div id = '7-reference'/>
+
+# 7. Reference
 
 [1] IBM. (n.d.). Data modeling. Retrieved April 2, 2023, from **[https://www.ibm.com/topics/data-modeling](https://www.ibm.com/topics/data-modeling#:~:text=Data%20modeling%20is%20the%20process,between%20data%20points%20and%20structures)**
 
