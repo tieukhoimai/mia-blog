@@ -55,12 +55,10 @@ This streamlined approach can help reduce join complexity and storage overhead i
 ## 2. Conformed Dimension
 
 > A conformed dimension is descriptive master reference data that’s referenced in multiple dimensional models. Conformed dimensions are a fundamental element of the Kimball approach. 
-
-Conformed dimensions allow DW/BI users to consistently **slice-and-dice performance metrics** from multiple business process data sources. Conformed dimensions allow data from different sources to be integrated based on common, unified dimension attributes.
-
-Finally, conformed dimensions allow a dimension table to be built and maintained once rather than recreating slightly different versions during each development cycle.
-
-*Reference:* [https://www.kimballgroup.com/2011/06/design-tip-135-conformed-dimensions-as-the-foundation-for-agile-data-warehousing/](https://www.kimballgroup.com/2011/06/design-tip-135-conformed-dimensions-as-the-foundation-for-agile-data-warehousing/#:~:text=A%20conformed%20dimension%20is%20descriptive%20master%20reference%20data,performance%20metrics%20from%20multiple%20business%20process%20data%20sources)
+> Conformed dimensions allow DW/BI users to consistently **slice-and-dice performance metrics** from multiple business process data sources. Conformed dimensions allow data from different sources to be integrated based on common, unified dimension attributes.
+> Finally, conformed dimensions allow a dimension table to be built and maintained once rather than recreating slightly different versions during each development cycle.
+>
+> *Reference:* [Design tip 135 conformed dimensions as the foundation for agile data warehousing](https://www.kimballgroup.com/2011/06/design-tip-135-conformed-dimensions-as-the-foundation-for-agile-data-warehousing/)
 > 
 
 In a more specific scenario, `ProductId` and `DateID` are found in the `Fact Sales` and `Fact Inventory` tables and these identifiers establish essential links to the `Dim Product` and `Dim Date` dimensions, respectively. 
@@ -77,9 +75,9 @@ Moreover,  **calendar-date dimension** extends beyond its role as a prime exampl
 
 ![Fig 3. Illustration for Role-Playing Dimensions](resource/role-playing_dimension.png '**Fig 3.** Illustration for Role-Playing Dimensions')
 
-> A **single physical dimension** can be referenced **multiple times in a fact table**, with each reference linking to a logically distinct role for the dimension. 
-
-Reference: [https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/role-playing-dimension/](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/role-playing-dimension/)
+> A **single physical dimension** can be referenced **multiple times in a fact table**, with each reference linking to a logically distinct role for the dimension
+> 
+> *Reference*: [Role-playing Dimension](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/role-playing-dimension/)
 > 
 
 For example, a fact table can have several dates, each of which is represented by *a foreign key to the date dimension*.  It is essential that each foreign key refers to a separate view of the date dimension so that the references are independent. **These separate dimension views (with unique attribute column names) are called *roles*.**
@@ -93,8 +91,8 @@ For example, in an order fulfillment process, using a `Date` dimension with role
 ## 4. Junk Dimension
 
 > Transactional business processes typically produce a number of miscellaneous, ***low-cardinality**** ﬂags and indicators. Rather than making separate dimensions for each ﬂag and attribute, you can create a single ***junk dimension*** combining them together. This dimension, frequently labeled as a *transaction proﬁle dimension* in a schema, does not need to be the Cartesian product of all the attributes’ possible values, but should only contain the combination of values that actually occur in the source data.
-
-Reference: [https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/junk-dimension/](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/junk-dimension/)
+> 
+> *Reference*: [Junk Dimension](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/junk-dimension/)
 > 
 
 ****Low-cardinality** implies that the attribute has a small number of possible values or options. This is in contrast to high-cardinality, where an attribute has a large number of distinct values.*
