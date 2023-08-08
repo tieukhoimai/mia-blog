@@ -34,14 +34,14 @@ keywords:
 
 <br>
 
-<div id='#1-degenerate-dimension'/>
+<div id='1-degenerate-dimension'/>
 
 ## 1. Degenerate Dimension
 
 > A degenerate dimension is a concept within data warehousing and database design. It refers to a dimension that consists of a single attribute, typically a key or identifier, found in a fact table. This type of dimension is commonly encountered in scenarios involving transactional or accumulating snapshot fact tables.
 > 
 
-For instance, consider a fact table that records sales transactions. In this context, the **`TransactionId`** can be regarded as a degenerate dimension. Unlike conventional dimensions, degenerate dimensions lack descriptive information or hierarchical structure. 
+For instance, consider a fact table that records sales transactions. In this context, the `TransactionId` can be regarded as a degenerate dimension. Unlike conventional dimensions, degenerate dimensions lack descriptive information or hierarchical structure. 
 
 Furthermore, they don't find a place in any separate dimension table as they are directly associated with the fact records themselves. 
 
@@ -50,7 +50,7 @@ This streamlined approach can help reduce join complexity and storage overhead i
 ![Fig 1. Illustration for Degenerated Dimension](resource/degenerated.png '**Fig 1.** Illustration for Degenerated Dimension')
 
 
-<div id='#2-conformed-dimension'/>
+<div id='2-conformed-dimension'/>
 
 ## 2. Conformed Dimension
 
@@ -63,7 +63,7 @@ Finally, conformed dimensions allow a dimension table to be built and maintained
 *Reference:* [https://www.kimballgroup.com/2011/06/design-tip-135-conformed-dimensions-as-the-foundation-for-agile-data-warehousing/](https://www.kimballgroup.com/2011/06/design-tip-135-conformed-dimensions-as-the-foundation-for-agile-data-warehousing/#:~:text=A%20conformed%20dimension%20is%20descriptive%20master%20reference%20data,performance%20metrics%20from%20multiple%20business%20process%20data%20sources)
 > 
 
-In a more specific scenario, **`ProductId`** and **`DateID`** are found in the **`Fact Sales`** and **`Fact Inventory`** tables and these identifiers establish essential links to the **`Dim Product`** and **`Dim Date`** dimensions, respectively. 
+In a more specific scenario, `ProductId` and `DateID` are found in the `Fact Sales` and `Fact Inventory` tables and these identifiers establish essential links to the `Dim Product` and `Dim Date` dimensions, respectively. 
 
 **This linkage designates the `Dim Product` and `Dim Date` dimensions as conformed dimensions within this particular context.** This underscores the vital role of conformed dimensions, which play a pivotal role in harmonizing data across analyses, ensuring data uniformity and precise insights from various perspectives.
 
@@ -71,7 +71,7 @@ Moreover,  **calendar-date dimension** extends beyond its role as a prime exampl
 
 ![Fig 2. Illustration for Conformed Dimension](resource/conformed_dimension.png '**Fig 2.** Illustration for Conformed Dimension')
 
-<div id='#3-role-playing-dimension'/>
+<div id='3-role-playing-dimension'/>
 
 ## 3. Role-Playing Dimension
 
@@ -88,7 +88,7 @@ Role-playing dimensions are most commonly associated with [accumulating snapshot
 
 For example, in an order fulfillment process, using a `Date` dimension with roles like placed date, paid date, ship date, and received date can provide insights into the different stages of order processing over time.
 
-<div id='#4-junk-dimension'/>
+<div id='4-junk-dimension'/>
 
 ## 4. Junk Dimension
 
@@ -101,11 +101,11 @@ Reference: [https://www.kimballgroup.com/data-warehouse-business-intelligence-re
 
 ![Fig 4. Illustration for Junk Dimensions](resource/junk_dimension.png '**Fig 4.** Illustration for Junk Dimensions')
 
-When utilizing the cross-join technique, the SQL query generates what is known as a **junk dimension key**. This key is created by generating all possible combinations of rows, resulting in an `n x m` matrix, where `n` represents the number of distinct values in one dimension (e.g., **`dim_product`**), and `m` represents the number of distinct values in another dimension (e.g., **`dim_promo`**). The resulting key is a unique identifier for each combination of attributes.
+When utilizing the cross-join technique, the SQL query generates what is known as a **junk dimension key**. This key is created by generating all possible combinations of rows, resulting in an `n x m` matrix, where `n` represents the number of distinct values in one dimension (e.g., `dim_product`), and `m` represents the number of distinct values in another dimension (e.g., `dim_promo`). The resulting key is a unique identifier for each combination of attributes.
 
-This key is crafted by merging specific attributes extracted from both the **`dim_product`** and **`dim_promo`** tables. The purpose of this key is to act as a reference point within the fact table, allowing data analysts to easily associate and analyze related attributes. By consolidating these combinations into a **single junk dimension**, the data model becomes more streamlined, efficient, and conducive to insightful analysis.
+This key is crafted by merging specific attributes extracted from both the `dim_product` and `dim_promo` tables. The purpose of this key is to act as a reference point within the fact table, allowing data analysts to easily associate and analyze related attributes. By consolidating these combinations into a **single junk dimension**, the data model becomes more streamlined, efficient, and conducive to insightful analysis.
 
-<div id='#5-outrigger-dimension'/>
+<div id='5-outrigger-dimension'/>
 
 ## 5. Outrigger Dimension
 
@@ -117,17 +117,17 @@ Outrigger dimensions come into play when a dimension table or entity has a relat
 
 For example, consider a scenario where a `DimPromo` needs to reference a separate dimension that represents the `PromoDateID` - start date of the promotion. These secondary dimension references are called outrigger dimensions.
 
-<div id='#6-slowly-changing-dimension'/>
+<div id='6-slowly-changing-dimension'/>
 
 ## 6. Slowly Changing Dimension
 
-<div id='#60-type-0-retain-original'/>
+<div id='60-type-0-retain-original'/>
 
 ### 6.0. [Type 0: Retain original](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-0)
 
 Retains the original data without tracking historical changes. This method is straightforward but lacks historical insight.
 
-<div id='#61-type-1-overwrite'/>
+<div id='61-type-1-overwrite'/>
 
 ### 6.1. [Type 1: Overwrite](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-1)
 
@@ -135,7 +135,7 @@ In a Type 1 Slowly Changing Dimension (SCD), changes to attributes result in the
 
 ![Fig 6. SCD Type 1](resource/type1.png '**Fig 6.** SCD Type 1')
 
-<div id='#62-type-2-add-new-row'/>
+<div id='62-type-2-add-new-row'/>
 
 ### 6.2. [Type 2: Add new row](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-2)
 
@@ -145,7 +145,7 @@ A surrogate key is typically assigned to each row for identification. While this
 
 ![Fig 7. SCD Type 2](resource/type2.png '**Fig 7.** SCD Type 2')
 
-<div id='#63-type-3-add-new-attribute'/>
+<div id='63-type-3-add-new-attribute'/>
 
 ### 6.3. [Type 3: Add new attribute](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-3)
 
@@ -157,7 +157,7 @@ For example, a product dimension might have an extra column to store the previou
 
 Fig 8. SCD Type 3
 
-<div id='#64-type-4-add-mini-dimension'/>
+<div id='64-type-4-add-mini-dimension'/>
 
 ### 6.4. [Type 4: Add mini-dimension](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-4-mini-dimension)
 
@@ -165,7 +165,7 @@ In a Type 4 SCD, a separate table, often referred to as a `mini-dimension` or `h
 
 ![Fig 9. SCD Type 4](resource/type4.png '**Fig 9.** SCD Type 4')
 
-<div id='#65-type-5-add-mini-dimension-and-type-1-outrigger'/>
+<div id='65-type-5-add-mini-dimension-and-type-1-outrigger'/>
 
 ### 6.5. [Type 5: Add mini-dimension and Type 1 outrigger](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-5)
 
@@ -173,7 +173,7 @@ Consider a Product dimension with Type 4 historical tracking. With Type 5, a "cu
 
 This key represents the latest version of the product profile. Changes to the product's attributes update both the historical records in the Type 4 dimension and the "current profile" key in the base dimension. This approach combines elements of both Type 4 and Type 1 methodologies.
 
-<div id='#66-type-6-add-type-1-attributes-to-type-2-dimension'/>
+<div id='66-type-6-add-type-1-attributes-to-type-2-dimension'/>
 
 ### 6.6. [Type 6: Add Type 1 attributes to Type 2 dimension](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-6)
 
@@ -183,7 +183,7 @@ Type 6 introduces an interesting twist by embedding a Type 1 attribute within a 
 
 For example, let's say you have a Type 2 dimension for product price. In a Type 6 scenario, an alternate attribute such as `current price` and `previous price` is added. Whenever the `current price` attribute changes, it overwrites the existing value in a Type 1 manner. This hybrid approach allows certain attributes to be updated quickly while maintaining historical tracking for the main Type 2 attributes.
 
-<div id='#67-type-7-dual-type-1-and-type-2-dimensions'/>
+<div id='67-type-7-dual-type-1-and-type-2-dimensions'/>
 
 ### 6.7. [Type 7: Dual Type 1 and Type 2 dimensions](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-7)
 
