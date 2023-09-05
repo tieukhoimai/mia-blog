@@ -153,8 +153,6 @@ For example, a product dimension might have an extra column to store the previou
 
 ![Fig 8. SCD Type 1](resource/type3.png '**Fig 8.** SCD Type 3')
 
-Fig 8. SCD Type 3
-
 <div id='64-type-4-add-mini-dimension'/>
 
 ### 6.4. [Type 4: Add mini-dimension](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-4-mini-dimension)
